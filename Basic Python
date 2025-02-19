@@ -1,0 +1,581 @@
+PYTHON
+Arthimetic operations - + * / %  //(divide)
+logical openrations - AND OR NOT && || !
+ power - ** followed by power
+Relational operator / conditional - < <= > >= == !=
+Bit-wise operator = 
+	&(and) if both same shows 1 not same 0 
+	|(OR)  if either one is crt
+	^(not)  
+	<<(left shift) 
+	>>(right shift)
+=====================
+Python use indentation - 4 spaces in place of brackets
+===================
+To input :- variable = type(input(" input value of --"))
+To print :- ("value of - ",-)
+====================
+If / Else :
+	if condition:
+		print()
+	elif condition:
+		print()
+	else:
+		print()
+To check whether some thing is same 
+	or 
+		x=2,y=3
+		if (x=2 or y = 2):
+			one if it is same so it is true
+To check both are same 
+	and
+		x=2,y=2
+		if (x=2 and y = 2):
+			both are same so it is ture 
+====================
+To check it is alphabet 
+	(variable.isalpha())
+To check it is digit
+	(variable.isdigit())
+To check the alphabet is between some extent
+	if((variable >='a' and variable <='z') or ((variable >= 'A' and variable <='Z')):
+Nested means
+	a statement which is in same condition
+		if ----:
+			...
+			if ---:
+				...
+=====================
+while condition:
+	statements
+	.........
+	i +=1
+=====================
+(start, end , step )
+for var in range (start, end, step):
+	print(var ,end =" ")
+=====================
+Break 
+Break used to stop the loop there it self 
+Continue 
+Skip the given condition
+======================
+To add digits 
+n = 10
+d = n%10 (to extract digit)
+total = total + d
+n = n//10 (to remove digit)
+======================
+Functions'
+represented with def
+def function_name(var1,var2,...):  {head}
+	statement		{body}
+	return[expression]	{body}
+we call funtions by using fun_name()
+--------------------------
+To run function we should call it after the function method
+with 
+function() at the end 
+example:-
+def fun(n,m):
+    z = n*m
+    print(z)
+n = int(input())
+m = int(input())
+fun(n,m)
+========================
+Directories
+It is represented in curly barces{}
+it is to assign values 
+key : value 
+dic ={"a" : 1, "b"=4}
+dic(b)
+~ 4
+To add directorie
+dic["c"]=7
+
+========================
+Iteratables 
+	it is a list which consists of multiple data
+========================
+map(function,iterable)
+	it is used to call a function for every given number in list 
+		every number in list (iteable) is checked by function using map
+To get output in list we can use "list" keyword
+list(map(fun,iterable))
+========================
+Packages (PIP)
+it is a group of files needed for module
+
+========================
+modules
+it is used to import a file to another file using file name that file name is known as module_name
+it can be used in many ways 
+------
+import module_name
+varible = module_name.fun_name(-,-)
+print(variable)
+--------
+with out calling module name in variable
+from module_name import fun
+var = fun(-,-)
+print(var)
+----------
+To import all functions
+from module_name import * 
+--------
+To change file name in import use 'as'
+import file_name as fn
+--------
+To check the available modules
+help('modules')
+--------
+some imp modules ---
+---------------------
+import math
+To import math values 
+print(math.pi)
+for power
+math.pow(-,-)
+for square root 
+math.sqrt(-)
+for ceil (to show near highest value)
+math.ceil(-.---)
+for floor (to show near lowest value)
+math.floor(-.---)
+------
+Trignometri
+math.sin()
+math.cos()
+math.tan()
+---------------------
+import statistics
+statistics.mean([-,-,-,-])   (avg)
+statistics.median([-,-,-,-])  (middle val)
+statistics.mode([-,--,--,-,-,-,-,-,-,-])  (repeated val)
+-----------------------
+import camelCase
+this is used to write capital letter at start of the word
+import camelcase
+
+c = camelcase.CamelCase()
+
+txt = "lorem ipsum dolor sit amet"
+
+print(c.hump(txt))
+-----------------------
+System module - used to check system
+import sys
+sys.version - To check system version
+sys.path -To check the path of system
+sys.maxsize -To check the max size of system
+-----------------------
+OS module 
+import os
+os.mkdir("c:\\path")  -{To make directorie }
+os.getcwd() - To get the current working path 
+os.chdir("c:\\path") - {To change the current path to given path}
+os.rmdir("c:\\path") - {To remove directorie}
+========================
+Import random 
+random.random()  -To pick a random number from random module 
+random.uniform(-,-) - To pick a random with in range
+========================
+import secrets
+To import secret numbers
+secterGenerator = secret.systemRandom() 
+otp=secretgenerator.randrange(--,--) - To display random numbers within range
+===========================
+Matplotlib
+
+========================
+Generators :- used with yield keyword 
+	-To return multiple values from one function
+we use yield in place of return to show multiple solutions
+Return is used to stop code after it reaches the condition
+yield is used to run until it execute completely
+
+Ex:-
+def f2():
+	for i in range(10):
+		yield i
+result = f2()
+for values in result:
+	print(values)
+To print only for a limit we can use "__next__()" keyword
+=======================
+List comprehensions
+	 are used to simplify the checking process from other string
+sentence = "the quick brown fox jumps over the lazy dog"
+words = sentence.split()
+word_lengths = []
+for word in words:
+      if word != "the":
+          word_lengths.append(len(word))
+print(words)
+print(word_lengths)
+-----------------
+loops can be written in variable with [] brackets
+----------------
+sentence = "the quick brown fox jumps over the lazy dog"
+words = sentence.split()
+word_lengths = [len(word) for word in words if word != "the"]
+print(words)
+print(word_lengths) 
+--------
+To reverse a list 
+mylist.reverse()
+or mylist[::-1]
+--------
+To add 2 lists 
+use + symbol
+--------
+sort
+mylist.sort() is used to sort
+------- 
+min and max
+min(mylist),max(mylist)
+---------------------
+List indexing 
+-5  -4  -3  -2  -1
+[3] [4] [2] [4] [5]
+ 0   1   2   3   4
+======================
+ID() function in string
+id(a)
+id is used to print address of a in memory 
+=======================
+Tuples
+are like list
+=============================
+Lambda functions
+	-Single line functions
+keyword = "lambda"
+Fun = lambda input : output
+-----
+fun =  lambda input : condition to output
+We give a single condition in lambda function
+and we can reacall it anytime we want by inserting number in it 
+print(lambda_new(our fav number))
+=============================
+multiple function arguments
+fun() - when we use return we should create function
+		as ~ var = fun()
+		   print(var)
+without return keyword we can just call function	
+def function_name(parameters):
+-----
+default argument
+fixed value of a parameter in function 
+----
+ex :- a = 100
+Keyword arguments
+calling a parameter in main content with another variable to equal it 
+def fun(abdsdf,afadf):
+	---
+a = abdsdf
+b = afadf
+~ to simplify paramters
+------
+Variable length arguments
+To add more values to a single parameter by using * in the front of parameter
+def fun(a ,*b):
+	----
+we can add many parameters to it
+b=--
+b= ---
+b=------
+----
+Global variable
+It is used to write a parameter in one function to give a fixed value for every parameter in every function
+	-------
+Types of functions
+1) Without parameters , without return value
+def fun():
+	print("Hello")
+fun() {calling}
+
+2) Without parameters, with return value
+def fun():
+	sum = 0
+	for i in range(1,11):
+		sum +=0
+	return sum
+fun() - when we use return we should create function
+ans = fun() {creating}
+print(ans)
+
+3) with parameters, without return value
+def wel(name,gen):
+	
+4) with parameters, with return value
+def fun(arr,size,value):
+	cnt = 0
+	 for i in range (0,size):
+		if arr[i] == value:
+			cnt +=1
+		return cnt
+my_list=[1,2,3,4,5,1,2,2,3,1,3,4,4,3,2,2,2,3,3]
+print('ocarence: ',getcount(my_list,len(mylist),1))
+================================
+Regular expression - used for search patterns
+Import re (module)
+Regular expression consists of special characters
+-meta characters
+	[] , ^ , $ , . , | ,? , * , + , {} , ()
+		^ - is used to search the target is at first in " "
+		$ - is used to search the target is last or not in " "
+		. - is used to search letters btw both letters (-.-)
+		| - is or
+		? - 0 or 1
+			a = "my name is dheeraj"
+			re.findall("na?me,a) 
+				check letter a in all the string 
+		* - 0 or more
+			a = "my name is dheeraj"
+			re.findall("na*me,a) 
+				check letter a in all the string 
+		+ - 1 or more
+			a = "my name is dheeraj"
+			re.findall("na+me,a) 
+				check letter a in all the string 
+			
+
+ -Regex functions
+	match() - check the given pattern in the begining target
+	findall() - finds all the matching patterns in target swing
+		re.findall("[which u want to find ]")
+			shows in form of list
+	finditer() - To check the given target using for loop in iterator
+	split() - used to split the given input intlo list
+	fullmatch() - used to check total target
+	search() -
+	sub()
+==========================
+Exception handling - Error handling
+	It is used to handle errors output 
+		we can control the error output based upon our needs
+try - it contains block of code which shows error/exception
+except - a error will be written in except syntax and we can control output with it
+with only this code
+    a = 10
+    b = 0
+    print(a / b)
+we get ZeroDivisionerror
+by using except we can change output
+Input:
+try:
+    a = 10
+    b = 0
+    print(a / b)
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+Output: 
+Cannot divide by zero!
+
+try : test code 
+except : handle errors
+else : execute code when there is no error
+finally : execute code to show final result
+rise : use to show error when it goes out of condition
+x = -1
+
+if x < 0:
+  raise Exception("Sorry, no numbers below zero")
+shows error as Sorry, no numbers below zero
+===========================
+Sets
+	it is used to create list with no duplicates from a text
+print(set("my name is Eric and Eric is my name".split()))
+----
+Intersection 
+   it is used to check common words from 2 texts a , b
+a = set(["Jake", "John", "Eric"])
+b = set(["John", "Jill"])
+
+print(a.intersection(b))
+print(b.intersection(a))
+----
+symmetric_difference
+   used to check non common words from 2 texts a , b
+a = set(["Jake", "John", "Eric"])
+b = set(["John", "Jill"])
+
+print(a.symmetric_difference(b))
+print(b.symmetric_difference(a))
+----
+difference 
+    used to check single reapted word from both texts
+a = set(["Jake", "John", "Eric"])
+b = set(["John", "Jill"])
+
+print(a.difference(b))
+print(b.difference(a)) 
+----
+union 
+  used to print all words 
+a = set(["Jake", "John", "Eric"])
+b = set(["John", "Jill"])
+
+print(a.union(b))
+===================
+Serialization
+* dump() - used to serialize an open file obj
+* dumps() - used to serialize string
+Deserialization
+* load() - used to deserialize open obj
+* loads() - deserialization of string
+-------
+Pickle ~used to enter data in files
+	It is used to store data in binary numbers which human cant read, it take low memory 
+
+import pickle
+file=open('filename.txt','wb')
+pickle.dump(directorie,file)
+
+we should open file in ~ wb ~ format "write binary"
+ ~ rb ~ to read in binary format 
+pickle.dumps(directorie) is used to change data to binary data
+pickle.loads(file) is used to change binary data to data 
+-------
+JSON 
+	It is used to store data in human readable data
+~ It is used to store and retrive data
+used in mongo DB to store data
+import json   
+ 
+info = {
+  "id": "5",
+  "name": "ABC",
+  "pass": "abc#123"
+}
+    ~ DUMPS & LOADS ~
+# Serializing using json 
+serialized_info = json.dumps(info)
+print('Serialized data:',serialized_info)
+
+#Deserializing using json
+deserialized_info = json.loads(serialized_info) #get the information in the form of a dictionary
+print('Deserialized data:',deserialized_info)
+   
+print(deserialized_info['id']) #printing one of the element by indexing the dictionary using key
+output:
+Serialized data: {"id": "5", "name": "ABC", "pass": "abc#123"}
+Deserialized data: {'id': '5', 'name': 'ABC', 'pass': 'abc#123'}
+5
+------------
+Marshal
+	It is used to read and write compiled byte code into files
+====================
+Partial functions
+	it allows function with x parameters to a function with few parameters
+from functools import partial
+it allows to give some fixed values for functions we can assign other value in main statement
+from functools import partial
+
+def multiply(x, y):
+        return x * y
+dbl = partial(multiply, 2)
+print(dbl(4))
+   It takes value from left
+the value 4 will be with value of x and y will be 2
+~~~~
+we can assign values to any parameter by using variable in main function
+def add(a, b, c):
+    return 100 * a + 10 * b + c
+add_part = partial(add, c = 2, b = 1)
+====================
+Constructor
+	is used in class attribute to call parameter in functions by using "self" parameter
+class attribute:
+	def __init__(self,a,b):
+		self.a = aa
+		self.b = bb
+	def fun2(self):
+		return self.a+self.b
+var = attribute(paramters)
+print(var.fun2())
+__init__ it is used to call a string to function. It is mainly used in class attribute
+====================
+Code Introspection
+	It is used to know the ability of classes,funtion,keywords
+help(obj) -used to know anything in python
+dir() - used to list all functions, classes, modules, objects
+hasattr(obj,var) -used to check the artibutes
+id() - memory address
+type(object) - used to know type of obj 
+repr(obj) -returns string reresented in obj
+callable() - checks the bj is calable or not
+issubclass(subClass,SuperClass) - checks class is subclass or other class
+isinstance(obj,classinfo) - checks obj is instance of class or ot
+__doc__ = shows function in document
+__name__ = shows name of function
+========================
+File handling
+To remove 
+import os 
+os.remove("filename.txt")
+To rename
+os.rename("filename.txt","name i want")
+=============================
+Inheritence
+ 	~It is used to call every process and attribute of parent class to child class
+Parent class - Super class / Sub class
+Child class - Sub class / Derived class
+class (parent class):
+	-----
+class child class(parent class):
+	-----
+=============================
+Method Overriding
+	It is caused when parent class and child class gives same name in functions
+
+
+=============================
+Closures
+	~Nested functions  that allow us to access variables of the outer function even the outer function is closed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
