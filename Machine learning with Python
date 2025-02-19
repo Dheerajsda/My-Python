@@ -1,0 +1,123 @@
+Machine Learning 
+	~It is used to store data in database by using python modules
+~teaches to calculate numbers based on data sets,Statsistics
+=========================
+characterstics
+learns relationship btw data
+predict outcome from past data
+improve with past experience
+========================
+Data Types 
+  Numerical - data in numbers
+	1)Discrete data - Counting number of item
+	2)Continuous data - Measuring of size of item
+  Categorial - data which can't be measured and is used for labels, colors, types, groups.
+Original data - Data which can be measured by using letters like grades.
+=======================
+MEAN MEDIAN MODE (only by using lists)
+import numpy
+Mean ~ Avg value
+mean()
+list =[-,-,-,--,-,-,-,-]
+var = numpy.mean(list)
+Median ~ Mid point value
+list =[-,-,-,--,-,-,-,-]
+var = numpy.median(list) 
+Mode ~ Common value 
+from scipy import stats
+list =[-,-,-,--,-,-,-,-]
+var = stats.mode(list)
+=============================
+Variance σ2
+	~square of standard deviation
+steps of variance
+1) Mean
+2) Difference from mean for each value
+3) Square of difference
+4) Avg of squared value
+numpy.var()
+===========================
+Standard Deviation σ
+working process
+1) Mean
+2) Square diff = (data value - mean)^2
+3) mean for Square diff
+4) Root of mean is standard deviation
+import numpy
+var = numpy.std(list)
+Low Standard Deviation 
+	Nearest numbers 
+		the value of closest number for mean value  
+High Standard Deviation
+	wide ranged numbers
+		the value of mean over wide range
+=========================
+Percentile
+	the percentage of lower values in list for given condition
+NumPy. Percentile(list, value)
+==========================
+Data Distribution
+	used for testing 
+var = numpy.random.uniform(from, to , number of values)
+uniform - ranges value
+------------------------
+Histogram ~ Bars
+	To visualize data
+import numpy
+import matplotlib.pypiot as plt
+ ~~~~
+#Three lines to make our compiler able to draw:
+import sys
+import matplotlib
+matplotlib.use('Agg')
+
+import numpy
+import matplotlib.pyplot as plt
+
+x = numpy.random.uniform(0.0, 10.0, 250)
+
+plt.hist(x, 5)
+plt.show()
+
+#Two  lines to make our compiler able to draw:
+plt.savefig(sys.stdout.buffer)
+sys.stdout.flush()
+==========================
+Normal data distribution graph from low to high to low
+x = numpy.random.normal(5.0, 1.0, 100000)
+=========================
+Scatter plot ~ graph respresent with dots with 2 variables
+For fixed data
+x = [-,,--,--,--,-,-,-,-,-,-,,,-,-]
+y = [-.-,,,-,---,-,-,-,-,-,-,,-]
+plt.scatter(x, y)
+	
+------
+for random numbers
+x = numpy.random.normal(5.0, 1.0, 1000)
+y = numpy.random.normal(10.0, 2.0, 1000)
+
+plt.scatter(x, y)
+plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
